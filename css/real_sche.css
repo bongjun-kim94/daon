@@ -148,7 +148,20 @@
 
     .title{padding:20px 0;}
 
-    .main_01{padding:20px 0;}
+    .main_01{
+        width:100%;
+        padding:20px 0;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main_01 .calendar{width:90%;}
+    .main_01 .note{
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+        line-height: 20px;
+    }
 
     body{font-size:0.5em;}
 }
