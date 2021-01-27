@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('common.css');
+
+.main_01{
+    width:62.5%;
+    margin:0 auto;
+    padding:90px 0;
+    position:relative;
+}
+.main_01 ul{}
+.main_01 ul li{}
+.main_01 ul li img{}
+
+.main_01 .arrow{}
+.main_01 .arrow p{transition:.5s}
+.main_01 .arrow p:nth-of-type(1){
+    position:absolute; 
+    left:5%; top:50%;
+    transform:translate(0, -50%);
+    opacity: 0;
+}
+
+.main_01 .arrow p img{width:50%;}
+
+.main_01 .arrow p:nth-of-type(2){
+    position:absolute; 
+    right:5%; top:50%;
+    transform:translate(0, -50%);
+    opacity: 0;
+}
+.main_01:hover .arrow p{
+    opacity: 0.7;
+}
+
+.table{
+    width:62.5%; margin:0 auto;
+    text-align:center;
+    border-top:2px solid #ea7c1a;
+    border-collapse:collapse;
+}
+.table thead{
+    font-size:1em;
+    font-weight: bold;
+}
+.table thead tr{}
+.table thead tr td{
+    border:1px solid #ddd;
+    padding:10px 0;
+    border-right:none;
+}
+.table thead tr td:nth-of-type(1){
+    border-left:none;
+}
+
+.table tbody{
+    font-size:0.9em;
+}
+.table tbody tr{border:none;}
+.table tbody tr td{
+    border:1px solid #ddd;
+    padding:10px 0;
+    border-left: none;
+}
+.table tbody tr td:nth-of-type(14){
+    border-right:none;
+}
+
+.exp{
+    width:62.5%; margin:0 auto;
+}
+.exp p{
+    font-size:0.9em;
+    padding:25px 20px;
+}
+
+.exp .table_02{
+    text-align:center;
+    border-top:2px solid #ea7c1a;
+    border-collapse:collapse;
+    margin:25px 0;
+}
+.exp .table_02 tr, td{
+    border:1px solid #ddd;
+    border-left:none;
+    padding:10px 10px;
+    font-size:0.9em;
+}
+.exp .table_02 tr, td:nth-of-type(4){
+    border-right:none;
+}
+
+.main_02 h2{
+    width:62.5%; margin: 0 auto; text-align:center;
+    margin-bottom:90px;
+}
+
+@media (max-width:480px){
+    .header{
+        text-align:center;
+        width:100%;
+    }
+    .header nav{display:none;}
+    .header article a span{display:none;}
+    .header div h1{text-align:center;}
+
+    .title{padding:20px 0;}
+
+    .main_01{width:90%; padding:20px 0;}
+    .main_02{width:90%; overflow-x: auto; margin:0 auto;}
+    .main_02 .table{width:800px;}
+    .main_02 h2{margin-bottom:20px}
+
+    .exp{width:90%; text-align:left;}
+    .exp p{padding:15px 0;}
+
+    .exp .table_02{margin:10px 0;}
+
+    body{font-size:0.5em;}
+}
