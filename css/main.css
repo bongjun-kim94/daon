@@ -219,13 +219,64 @@
     opacity: .8;
 } */
 
+/* 버거메뉴 */
+.sidenav {
+    height: 40%;
+    width: 15px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ddd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    display:flex;
+    flex-direction: column;
+    
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+  }
+
+  /* @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 1em;
+    }
+  } */
+
 @media (max-width:480px){
     .header{
         text-align:center;
         width:100%;
     }
     .header nav{display:none;}
-    .header article a span{display:none;}
+    .header article .ca{display:none;}
     .header div h1{text-align:center;}
     .main_01, .main_02{
         padding:25px 0; width:90%;
