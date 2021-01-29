@@ -21,6 +21,16 @@
                     <span>실시간예약</span>
                 </a>
             </article>
+            <article class="burger">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="room.html">ROOM INFO</a>
+                    <a href="facilities.html">FACILITIES</a>
+                    <a href="real_sche.html">RESERVATION</a>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </article>
         </div>
     </header>
     <main>
@@ -114,8 +124,17 @@
             <img src="imgs/intro/map.jpg" alt="">
             <p>경기도 가평군 가평읍 경반안로 357-187 (경반리 583-34)</p>
         </div>
-
     </main>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "50%";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
     <footer class="footer">
         <p>

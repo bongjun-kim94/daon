@@ -130,7 +130,55 @@ a{
     opacity: .8;
 }
 
+/* ------ 버거메뉴 ------ */
+.header .burger{display:none;}
+
+.header > div
+.sidenav {
+    height: 50%;
+    width: 0%;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    display:flex;
+    justify-content:right;
+    flex-direction: column;
+  }
+
+  .sidenav a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+  }
+
 @media (max-width:480px){
+    
+    .header .burger{display:block;}
+    .header .burger .sidenav a{line-height: 50px;}
+    .header nav{display:none;}
+    .header article .ca{display:none;}
+
     .menu_indi{display:none;}
 
     .banner img{height:10vh;}

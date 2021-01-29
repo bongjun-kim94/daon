@@ -220,31 +220,32 @@
 } */
 
 /* 버거메뉴 */
+.header .burger{display:none;}
+
+.header > div
 .sidenav {
-    height: 40%;
-    width: 15px;
+    height: 50%;
+    width: 0%;
     position:fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #ddd;
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     
     display:flex;
+    justify-content:right;
     flex-direction: column;
-    
   }
 
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1em;
     color: #818181;
     display: block;
     transition: 0.3s;
-    
   }
 
   .sidenav a:hover {
@@ -259,8 +260,8 @@
     margin-left: 50px;
     
   }
-
-  /* @media screen and (max-height: 450px) {
+/* 
+  @media screen and (max-height: 450px) {
     .sidenav {
       padding-top: 15px;
     }
@@ -275,6 +276,8 @@
         text-align:center;
         width:100%;
     }
+    .header .burger{display:block;}
+    .header .burger .sidenav a{line-height: 50px;}
     .header nav{display:none;}
     .header article .ca{display:none;}
     .header div h1{text-align:center;}
