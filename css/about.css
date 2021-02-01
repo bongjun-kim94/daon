@@ -68,8 +68,8 @@
 .spot img{width:100%; margin-top:90px;}
 .spot p{
     position:absolute;
-    left:50%; top:50%;
-    transform:translate(-50%, -50%);
+    left:50%; top:55%;
+    transform:translate(-50%, -55%);
     color:#fff;
     font-size:4em;
 }
@@ -85,7 +85,7 @@
 .main_01 img{width:50%; height:100%;}
 .main_01 div{
     width:50%;
-    padding:40px 100px;
+    padding:30px 80px;
     line-height:25px;
 }
 .main_01 div strong{font-size:1.5em;}
@@ -105,7 +105,7 @@
 .main_02 img{width:50%; height:100%;}
 .main_02 div{
     width:50%;
-    padding:40px 100px;
+    padding:30px 80px;
     text-align:right;
     line-height:25px;
 }
