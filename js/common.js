@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.header').load('inc.html .header div', init);
+    $('.header').load('inc.html .header > div', init);
     $('.footer').load('inc.html .footer p');
 
         function init(){
@@ -14,8 +14,9 @@ $(function(){
             });
 
             $('.nav_menu a').eq(localStorage.pageNum).css({  "font-weight":"bold" });
-            $('article .ca').eq(localStorage.pageNum).css({ color:'#f00' });
-            $('.burger').css({ "display":"none" });
+            $('article .ca').eq(localStorage.pageNum).css({ "font-weight":"bold" });
+            //$('.burger .sidenav').eq(localStorage.pageNum).css({display:'none'});
+            // $('.burger .sidenav').css({'display':'none'});
             
         }
 

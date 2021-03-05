@@ -21,28 +21,28 @@ a{
 
 /* ------ header ------ */
 .header{}
-.header div{
+.header > div{
     width:62.5%;
     margin:0 auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
-.header div nav{width:33.3%; text-align:center;}
-.header div nav a{font-size:1em; padding:0 15px;  transition:.5s;}
+.header > div nav{width:33.3%; text-align:center;}
+.header > div nav a{font-size:1em; padding:0 15px;  transition:.5s;}
 
-.header div nav:hover a{opacity:0.3;}
-.header div nav a:hover{opacity: 1;}
+.header > div nav:hover a{opacity:0.3;}
+.header > div nav a:hover{opacity: 1;}
 
-.header div h1{
+.header > div h1{
     width:33.3%; 
     font-size:2.5em; margin:20px 0;
     text-align:center;
     text-decoration:none;
 }
 
-.header div img{width:30px; height:30px;}
-.header div .ca{
+.header > div img{width:30px; height:30px;}
+.header > div .ca{
     font-size:1em;
     font-weight: bold;
 }
