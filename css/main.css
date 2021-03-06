@@ -1,36 +1,6 @@
 @charset "UTF-8";
 @import url('common.css');
 
-/* header */
-/* .header{}
-.header div{
-    width:1200px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-.header div nav{width:33.3%; text-align:center;}
-.header div nav a{font-size:1em; padding:0 20px;}
-.header div h1{
-    width:33.3%; 
-    font-size:2.5em; margin:20px 0;
-    text-align:center;
-    text-decoration:none;
-}
-
-.header div img{width:30px; height:30px;}
-.header div .ca{
-    font-size:1em;
-}
-.header article{
-    width:33.3%;
-    text-align:center;
-    line-height: 30px;
-}
-.header article img{}
-.header article a{margin-left:10px;} */
-
 /* spot */
 .spot{
     width:100%;
@@ -206,18 +176,6 @@
     white-space:pre-line;
     margin-top:40px;
 }
-
-/* ------ footer ------ */
-/* .footer{
-    width:100%;
-    background:#f7f7f7; padding:50px 0;
-}
-.footer p{
-    text-align:center; font-size:13px;
-    color:#707070;
-    white-space:pre-line;
-    opacity: .8;
-} */
 
 /* 버거메뉴 */
 .header .burger{display:none;}

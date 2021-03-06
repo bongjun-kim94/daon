@@ -8,16 +8,9 @@ $(function(){
                 localStorage.pageNum = $(this).index();
             });
 
-            $('article .ca').on('click',function(){
-                localStorage.pageNum = 4;
-                console.log(localStorage.pageNum);
-            });
-
-            $('.nav_menu a').eq(localStorage.pageNum).css({  "font-weight":"bold" });
-            $('article .ca').eq(localStorage.pageNum).css({ "font-weight":"bold" });
-            //$('.burger .sidenav').eq(localStorage.pageNum).css({display:'none'});
-            // $('.burger .sidenav').css({'display':'none'});
+            $('.nav_menu a').eq(localStorage.pageNum).css({ "font-weight":"bold" });
             
+    
         }
 
 });
