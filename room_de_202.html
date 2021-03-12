@@ -6,35 +6,13 @@
     <title>Document</title>
     <link href="css/room_detail.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
-    <header class="header">
-        <!-- <div>
-            <nav>
-                <a href="about.html">ABOUT</a>
-                <a href="room.html">ROOM INFO</a>
-                <a href="facilities.html">FACILITIES</a>
-            </nav>
-            <h1><a href="index.html">DAON</a></h1>
-            <article>
-                <a href="real_sche.html" class="ca">
-                    <img src="imgs/callendar.png" alt="">
-                    <span>실시간예약</span>
-                </a>
-            </article>
-            <article class="burger">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="room.html">ROOM INFO</a>
-                    <a href="facilities.html">FACILITIES</a>
-                    <a href="real_sche.html">RESERVATION</a>
-                </div>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            </article>
-        </div> -->
-    </header>
+    <header class="header"></header>
     <main>
         <!-- ------ banner ------ -->
         <div class="banner">
@@ -61,11 +39,11 @@
                             <option value="room_de_202.html">202호</option>
                         </optgroup>
                         <optgroup label="ONLY YOU">
-                            <option>101호</option>
-                            <option>102호</option>
-                            <option>103호</option>
-                            <option>201호</option>
-                            <option>202호</option>
+                            <option value="room_de_101.html">101호</option>
+                            <option value="room_de_102.html">102호</option>
+                            <option value="room_de_103.html">103호</option>
+                            <option value="room_de_201.html">201호</option>
+                            <option value="room_de_202.html">202호</option>
                         </optgroup>
                     </select>
                 </li>
@@ -81,13 +59,18 @@
         
         <!-- ------ main_01 ------- -->
         <div class="main_01">
-            <div class="arrow">
+            <!-- <div class="arrow">
                 <p><img src="imgs/arrow_btn_left.png" alt=""></p>
                 <p><img src="imgs/arrow_btn_right.png" alt=""></p>
-            </div>
-            <ul>
-                <li>
+            </div> -->
+            <ul class="slider">
+                <li class="regular">
                     <img src="imgs/loveyou/202/room_202-01.jpg" alt="">
+                    <img src="imgs/loveyou/202/room_202-02.jpg" alt="">
+                    <img src="imgs/loveyou/202/room_202-03.jpg" alt="">
+                    <img src="imgs/loveyou/202/room_202-04.jpg" alt="">
+                    <img src="imgs/loveyou/202/room_202-05.jpg" alt="">
+                    <img src="imgs/loveyou/202/room_202-06.jpg" alt="">
                 </li>
             </ul>
         </div>
@@ -171,15 +154,6 @@
         }
     </script>
 
-    <footer class="footer">
-        <!-- <p>
-            가평다온펜션 온리유(민박사업자) | 펜션지기 : 박춘하 | 사업자등록번호: 286-11-00158 | 예약전화 : 010-3923-0662, 031-581-0662
-            주소 : 경기도 가평군 가평읍 경반안로 357-187 (경반리 583-34)
-            다온펜션 러브유(민박사업자) | 펜션지기 : 권미라 | 사업자등록번호: 167-21-00083 | 예약전화 : 010-7238-5601
-            주소 : 경기도 가평군 가평읍 경반안로 357-177
-
-            Copyright@ 2021 다온펜션 All Rights Reserved
-        </p> -->
-    </footer>
+    <footer class="footer"></footer>
 </body>
 </html>
