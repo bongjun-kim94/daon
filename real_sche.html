@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/real_sche.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/datepicker.en.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/cal.js"></script>
 </head>
 <body>
     <header class="header"></header>
@@ -57,14 +60,14 @@
 
         <!-- ------ main_01 ------ -->
         <div class="main_01">
-            <div class="calendar">
+            <!-- <div class="calendar">
                 <table class="cal">
                     <thead>
                         <tr>
                             <td colspan="2">
                                 <button type="button"><img src="imgs/realsche/cal_left.png" alt=""></button>
                             </td>
-                            <td colspan="3" class="tod"></td>
+                            <td colspan="3" class="tod">d</td>
                             <td colspan="2">
                                 <button type="button"><img src="imgs/realsche/cal_right.png" alt=""></button>
                             </td>
@@ -82,7 +85,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </div> -->
+            <div class="datepicker-here datepicker-promo"></div>
             <div class="note">
                 <div>
                     <strong>유의사항</strong>
@@ -825,6 +829,14 @@
             </div>
         </div>
     </main>
+
+    <script>
+        var $promo = $('.datepicker-promo');
+            $promo.datepicker({
+            language: 'en',
+            minDate: new Date() 
+      });
+    </script>
 
     <script>
         function openNav() {

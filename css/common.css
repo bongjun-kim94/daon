@@ -174,7 +174,7 @@ a{
 
 @media (max-width:480px){
     
-    .header .burger{display:block;}
+    .header .burger{display:block; z-index:99;}
     .header .burger .sidenav a{line-height: 50px;}
     .header nav{display:none;}
     .header article .ca{display:none;}

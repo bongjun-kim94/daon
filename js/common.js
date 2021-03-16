@@ -33,5 +33,17 @@ $(function(){
           //alert('after');
         }
       }); */
+      
 
 });
+
+function changeSelect(url){
+  var selectB = document.querySelector('#changes optgroup option');
+  //window.location.href=this.value
+  location.href = url;
+  //var selectValue = selectB.options[selectB.selectedIndex].text;
+  //select element에서 선택된 option의 text가 저장된다.
+  // console.log(selectText);
+}
+        
+    
