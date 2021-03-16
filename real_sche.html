@@ -181,7 +181,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="lu101" value="90000">
+                            <label for="lu101">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -251,7 +252,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="lu102" value="90000">
+                            <label for="lu102">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -321,7 +323,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="lu103" value="90000">
+                            <label for="lu103">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -391,7 +394,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="lu201" value="90000">
+                            <label for="lu201">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -461,7 +465,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="lu202" value="90000">
+                            <label for="lu202">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -532,7 +537,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="on101" value="90000">
+                            <label for="on101">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -602,7 +608,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="on102" value="90000">
+                            <label for="on102">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -672,7 +679,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="on103" value="90000">
+                            <label for="on103">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -742,7 +750,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="on201" value="90000">
+                            <label for="on201">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -812,7 +821,8 @@
                     </div>
                     <div class="sec_06">
                         <div>
-                            <a href="#">선택</a>
+                            <input type="checkbox" id="on202" value="90000" class="on202">
+                            <label for="on202">선택</label>
                             <p>0 원</p>
                         </div>
                     </div>
@@ -831,6 +841,53 @@
     </main>
 
     <script>
+        
+        // 체크 리스트 가격
+        $('.sec_06 div input').on('click',function(){
+            //attr - 속성
+            var a = $(this).prop('checked');
+
+            // if(a == true){
+            //     $('.sec_06 div label').addClass('active');
+            // }else{
+            //     $('.sec_06 div label').removeClass('active');
+            // }
+            
+            //console.log(a);
+            var total = 0;
+
+            $('.sec_06 div input').each(function(){
+                if( $(this).prop('checked') ){
+
+                    $(this).next().addClass('active');
+
+                    // if( $(this).next().hasClass('active') ){
+                    //     $(this).next().removeClass('active');
+                    // }
+                    
+
+                    var price = $(this).val();
+                    //console.log(price);
+                    // ,가 있으면 공백으로 변환
+                    price = price.replace(',','');
+                    price = parseInt(price);
+                    
+                    total += price;
+                }
+                
+            });
+            // console.log(typeof total.toString());
+            // 변환된 값을 replace - 바꿔줌
+            // 세 자리마다 ,로 바꿔줌 바꾸고자 하는 대상이 문자여야함
+            total = total.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")
+            //$('.sec_06 div p').text(total + '원');
+            $('.main_03 div p').text('총 결제금액 :'+ total + '원');
+        });
+        
+    </script>
+
+    <script>
+        // 달력
         var $promo = $('.datepicker-promo');
             $promo.datepicker({
             language: 'en',
@@ -839,6 +896,7 @@
     </script>
 
     <script>
+        // 모바일 버거메뉴
         function openNav() {
           document.getElementById("mySidenav").style.width = "50%";
         }

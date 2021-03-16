@@ -87,6 +87,30 @@
 .main_02 ul li .sec_06{
     width:10%; 
 }
+
+.main_02 ul li .sec_06 input{display:none;}
+
+.main_02 ul li .sec_06 label{
+    width:80px; height:35px;
+    display:block;
+    color:#000;
+    text-align:center;
+    background:#ddd;
+    border-radius: 5px;
+    font-size:0.9em;
+    line-height:35px;
+}
+input:checked + label.active{
+    background:#ea1f62;
+    color:#fff;
+}
+
+.main_02 .sec_06 div label.active{
+    background:#ea1f62;
+    color:#fff;
+}
+
+
 .main_02 ul li .sec_06 div{
     text-align:right;
     display:inline-block;
