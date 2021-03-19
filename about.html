@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/about.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <header class="header"></header>
+    <main>
+        <!-- ------ banner ------ -->
+        <div class="banner">
+            <img src="imgs/banner/banner.jpg" alt="">
+            <div>
+                <p>IN DAON PENSION</p>
+                <p>DAON</p>
+            </div>
+        </div>
+
+        <!-- ------ menu_indi ------ -->
+        <div class="menu_indi">
+            <ul class="indi">
+                <li><a href="index.html"><img src="imgs/menu_indi/home_btn.png" alt=""></a></li>
+                <li><a href="">ABOUT</a></li>
+                <li>
+                    <select>
+                        <option>인사말</option>
+                        <option>찾아오시는 길</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ------ title ------ -->
+        <div class="title">
+            <h2>인사말</h2>
+            <img src="imgs/title_btn.png" alt="">
+            <p>어서오세요 평생 잊지 못할 추억을 만드는 곳 다온입니다.</p>
+        </div>
+
+        <!-- ------ spot ------ -->
+        <div class="spot">
+            <img src="imgs/intro/spot.jpg" alt="">
+            <p>Welcome To You</p>
+        </div>
+
+        <!-- ------ main_01 ------ -->
+        <div class="main_01">
+            <div class="mimg">
+                <img src="imgs/intro/main_01.jpg" alt="">
+            </div>
+            <div class="words">
+                <strong>TO.. 다온에오신 모든 분들께 </strong>
+                <p>
+                    경춘국도 46호선 기차를 타고 춘천에 가려 했는데
+                    가는 길에 가평이 나를 붙잡았네, 우리발걸음을 멈추게 했네.
+
+                    그대와 나, 행복한 시간
+                    어떤 추억을 만들까?
+
+                    호명호수 일출, 유명산 억새꽃, 아침고요수목원,
+                    용추계곡, 자라섬, 남이섬 
+                    청평호반 멋진곳을 구경하고
+                    크리고 칼봉산 경반게곡 수락폭포 아래서
+                    우리의 사랑을 노래하리, 우리의 내일을 꿈꾸리.
+                </p>
+            </div>
+        </div>
+
+        <!-- ------ main_02 ------ -->
+        <div class="main_02"> 
+            <div class="words">
+                <strong>다온펜션은..</strong>
+                <p>
+                    여러분의 꿈과 행복이 이루어지고
+                    아름다운 추억을만들 수있도록
+                    그리스 산토리니를 곱게옮겨 놓았습니다.
+
+                    산속 공기좋고 물 좋은 이 곳, 칼봉산 자락에서 자연과 하나되어
+                    마음껏 힐링과 웰빙을 함께 체험해보십시오.
+
+                    love you 동과 only you 동
+                    커플과가족이 모두 만족하는 펜션!
+
+                    여기 다온에 오시면 여러분에게 사랑과 행복이 다 온것입니다.
+                </p>
+            </div>
+            <div class="mimg">
+                <img src="imgs/intro/main_02.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- ------ title_02 ------ -->
+        <div class="title_02">
+            <h2>찾아 오시는 길</h2>
+            <img src="imgs/title_btn.png" alt="">
+            <p>가슴 두근두근 설레게 하는 곳 다온펜션에 오신 것을 환영합니다.</p>
+        </div>
+
+        <button class="goTop"><img src="imgs/top_btn.png" alt=""></button>
+
+        <!-- ------ map ------ -->
+        <div class="map">
+            <div id="map" style="width:100%;height:350px;"></div>
+            <p>경기도 가평군 가평읍 경반안로 357-187 (경반리 583-34) 다온펜션</p>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58343884e1691a00b747ace72d7d151a"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.831158, 127.468895), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.831158, 127.468895); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
+    </script>
+
+    <footer class="footer"></footer>
+</body>
+</html>
+
+
+
+
+
+
