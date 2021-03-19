@@ -18,8 +18,7 @@
 
     padding:90px 0; 
 }
-.main_01 ul li{
-}
+
 .main_01 ul li figure{
     padding:0 10px;
 }
@@ -50,10 +49,6 @@
     word-spacing: 5px;
 }
 
-.main_01 ul li figure div{}
-.main_01 ul li figure img{}
-.main_01 ul li figure div a img{}
-
 .main_02{
     width:62.5%;
     margin:0 auto;
@@ -71,8 +66,7 @@
 
     padding:88px 0; 
 }
-.main_02 ul li{
-}
+
 .main_02 ul li figure{
     padding:0 10px;
 }
@@ -102,10 +96,6 @@
 .main_02 ul li figure:hover figcaption{
     word-spacing: 5px;
 }
-
-.main_02 ul li figure div{}
-.main_02 ul li figure img{}
-.main_02 ul li figure div a img{}
 
 .picture_map{
     width:62.5%; margin:0 auto;

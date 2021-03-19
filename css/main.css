@@ -5,7 +5,6 @@
 .spot{
     width:100%;
 }
-.spot .inner_c{}
 
 .spot .inner_c .imgList{
     width:100%; height:650px;
@@ -118,7 +117,6 @@
 .main_01 .preview_01 figure:hover figcaption{
     word-spacing: 5px;
 }
-.main_01 .preview_01 figure div a img{}
 
 /* ------ main_02 ------ */
 .ar_bg{background:#f1f1f1;}
@@ -161,15 +159,13 @@
 }
 .main_02 .preview_02 figure figcaption p{margin:5px 0; font-size:14px;}
 .main_02 .preview_02 figure figcaption strong{font-size:15px;}
-.main_02 .preview_02 figure a{}
-.main_02 .preview_02 figure a img{}
 
 /* ------ main_03 ------ */
 .main_03{
     width:100%;
     position:relative;
 }
-.main_03 img{}
+
 .main_03 div{
     position:absolute;
     left:50%; top:50%;
@@ -188,58 +184,6 @@
     white-space:pre-line;
     margin-top:40px;
 }
-
-/* 버거메뉴 */
-.header .burger{display:none;}
-
-.header > div
-.sidenav {
-    height: 50%;
-    width: 0%;
-    position:fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    
-    display:flex;
-    justify-content:right;
-    flex-direction: column;
-  }
-
-  .sidenav a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    
-  }
-/* 
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-
-    .sidenav a {
-      font-size: 1em;
-    }
-  } */
 
 @media (max-width:480px){
     .header{
@@ -289,4 +233,9 @@
     }
     .footer{padding:15px 0;}
     .footer p{font-size:1em;}
+}
+
+@media (max-width:800px){
+    .main_03 div p:nth-of-type(1){font-size:3em;}
+    .main_03 div p:nth-of-type(2){font-size:1em;}
 }

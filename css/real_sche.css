@@ -10,20 +10,18 @@
     transition:.5s;
 
 }
-.main_01 .datepicker-promo{}
+
 .main_01 .note{
     width:50%;
     text-align:center;
     white-space:pre-line;
     line-height: 26px;
 }
-.main_01 .note div{}
+
 .main_01 .note div strong{font-size:1.2em;}
 .main_01 .note div p{font-size:0.9em;}
 
 .main_01 button{border:none; background: none; outline:none;}
-
-.main_01 .datepicker-promo{}
 
 .main_02{width:62.5%; margin:0 auto;}
 .main_02 ul{
@@ -41,7 +39,6 @@
 .main_02 ul li .sec_01{
     width:15%;
 }
-.main_02 ul li .sec_01 img{}
 
 .main_02 ul li .sec_02{width:35%; margin-top:-10px;}
 .main_02 ul li .sec_02 span{
@@ -71,12 +68,11 @@
 
 .main_02 ul li .sec_03{width:10%; text-align: center;}
 .main_02 ul li .sec_03 span{font-size:0.9em;}
-.main_02 ul li .sec_03 select{}
 .main_02 ul li .sec_03 select option{font-size:0.9em;}
 
 .main_02 ul li .sec_04{width:10%; text-align: center;}
 .main_02 ul li .sec_04 span{font-size:0.9em;}
-.main_02 ul li .sec_04 select{}
+
 .main_02 ul li .sec_04 select option{font-size:0.9em;}
 
 .main_02 ul li .sec_05{
@@ -99,11 +95,9 @@
     border-radius: 5px;
     font-size:0.9em;
     line-height:35px;
+    transition:.2s;
 }
-input:checked + label.active{
-    background:#ea1f62;
-    color:#fff;
-}
+
 
 .main_02 .sec_06 div label.active{
     background:#ea1f62;
@@ -134,8 +128,9 @@ input:checked + label.active{
     margin-right:30px;
 } */
 .main_02 ul li .sec_06 div p{
-    font-size:1.5em;
+    font-size:1.1em;
     font-weight:bold;
+    text-align: center;
     margin-top:20px;
 }
 

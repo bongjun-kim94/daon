@@ -100,23 +100,46 @@
             <p>가슴 두근두근 설레게 하는 곳 다온펜션에 오신 것을 환영합니다.</p>
         </div>
 
+        <button class="goTop"><img src="imgs/top_btn.png" alt=""></button>
+
         <!-- ------ map ------ -->
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.2154780773526!2d127.46781341531926!3d37.83184107974909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356327df319b3213%3A0x524017b3d32c05a!2z64yA7ZWc66-86rWtIOqyveq4sOuPhCDqsIDtj4nqtbAg6rCA7Y-J7J2NIOqyveuwmOyViOuhnCAzNTc!5e0!3m2!1sko!2snp!4v1615641517723!5m2!1sko!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="map" style="width:100%;height:350px;"></div>
             <p>경기도 가평군 가평읍 경반안로 357-187 (경반리 583-34) 다온펜션</p>
         </div>
     </main>
 
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=58343884e1691a00b747ace72d7d151a"></script>
     <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "50%";
-        }
-    
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.831158, 127.468895), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.831158, 127.468895); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
     </script>
 
     <footer class="footer"></footer>
 </body>
 </html>
+
+
+
+
+
+

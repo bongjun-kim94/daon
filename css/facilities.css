@@ -21,8 +21,6 @@
     margin-bottom:90px;
 }
 
-.main_01 > ul li figure{}
-
 .main_01 > ul li figure div{
     display:flex;
     justify-content: space-between;

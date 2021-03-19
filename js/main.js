@@ -25,7 +25,4 @@ $(function(){
         }
         $('.imgList img').eq(imgNum).fadeIn();
     }
-
-
 });
-

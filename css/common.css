@@ -62,7 +62,7 @@ a{
     width:100%;
     position:relative;
 }
-.banner img{}
+
 .banner div{
     position:absolute;
     left:50%; top:50%;
@@ -130,6 +130,19 @@ a{
     opacity: .8;
 }
 
+.goTop {
+    display: none;
+    position: fixed;
+    right: 150px;
+    bottom: 40px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    opacity: 0;
+}
+.goTop > img{width:0px;}
+
+
 /* ------ 버거메뉴 ------ */
 .header .burger{display:none;}
 
@@ -153,7 +166,7 @@ a{
 
   .sidenav a {
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -169,7 +182,6 @@ a{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    
   }
 
 @media (max-width:480px){
@@ -185,6 +197,22 @@ a{
 
     .footer{padding:15px 0;}
     .footer p{font-size:1em;}
+
+    /* ------ top 버튼 ------ */
+    .goTop {
+        display: none;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        outline: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        z-index: 999;
+        opacity: 1;
+    }
+    .goTop > img{width:30px; height:30px;}
+
 }
 
 @media (max-width:1024px){
