@@ -1,28 +1,32 @@
-$(function(){
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
-    var fadeN = 0;
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/***/ (() => {
 
-    $('.spot .inner_c .imgList img').not(':first').hide();
-    setInterval(function(){
-        $('.spot .inner_c .imgList img').eq(fadeN).fadeOut(2000);
-        fadeN++;
-        if(fadeN == 5){fadeN = 0}
-        $('.spot .inner_c .imgList img').eq(fadeN).fadeIn(2000);
-    },4000);
+eval("// 방 정보 indi\nfunction changeSelect(url) {\n  var selectB = document.querySelector('#changes optgroup option');\n  localStorage.select = url;\n  location.href = url;\n} // 모바일 버거메뉴 open, off\n\n\nfunction openNav() {\n  document.getElementById(\"mySidenav\").style.width = \"50%\";\n}\n\nfunction closeNav() {\n  document.getElementById(\"mySidenav\").style.width = \"0\";\n}\n\n//# sourceURL=webpack://project_01/./src/js/main.js?");
 
-    $('.arrow a').on('click',fadeFun);
-    var imgNum = 0;
+/***/ })
 
-    function fadeFun(){
-        $('.imgList img').eq(imgNum).fadeOut();
-        console.log($(this).index());
-        if($(this).index() == 1){
-            imgNum++;
-            if(imgNum == 5){imgNum = 0}
-        }else{
-            imgNum--;
-            if(imgNum == -1){imgNum = 2}
-        }
-        $('.imgList img').eq(imgNum).fadeIn();
-    }
-});
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/js/main.js"]();
+/******/ 	
+/******/ })()
+;

@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/datepicker.en.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -29,7 +30,7 @@
             <ul class="indi">
                 <li><a href="index.html"><img src="imgs/menu_indi/home_btn.png" alt=""></a></li>
                 <li><a href="#">실시간예약</a></li>
-                <li>
+                <!-- <li>
                     <select onChange="window.location.href=this.value">
                         <option selected>예약하기</option>
                         <optgroup label="LOVE YOU">
@@ -47,7 +48,7 @@
                             <option>202호</option>
                         </optgroup>
                     </select>
-                </li>
+                </li> -->
             </ul>
         </div>
 
@@ -789,77 +790,56 @@
 
     <script>
         
-        // 체크 리스트 가격
-        // 이용기간 계산
-        $('.main_02 li select').on('change', selectValue);
+        // // 체크 리스트 가격
+        // // 이용기간 계산
+        // $('.main_02 li select').on('change', selectValue);
         
-        $('.sec_06 div input').on('click',function(){
-            // 버튼 선택 시 background
-            $(this).next().toggleClass('active');
-            selectValue();         
-        });
+        // $('.sec_06 div input').on('click',function(){
+        //     // 버튼 선택 시 background
+        //     $(this).next().toggleClass('active');
+        //     selectValue();         
+        // });
 
-        function selectValue(){
+        // function selectValue(){
 
-            var total = 0, price = 0, persPrice = 20000, juniorPrice = 10000,
-                stay, pers, junior, result=0;
+        //     var total = 0, price = 0, persPrice = 20000, juniorPrice = 10000,
+        //         stay, pers, junior, result=0;
                 
-            $('.main_02 li').each(function(){
-                if( $(this).find('.sec_06 input').prop('checked') ){
-                    price = $(this).find('.sec_06 input').val(); //90000
-                    stay = $(this).find('.stay').val(); //1 2 3
-                    pers = $(this).find('.pers').val(); // 2명 기준(1명 추가 20000원)
-                    junior = $(this).find('.junior').val(); // 1명 추가 10000원
+        //     $('.main_02 li').each(function(){
+        //         if( $(this).find('.sec_06 input').prop('checked') ){
+        //             price = $(this).find('.sec_06 input').val(); //90000
+        //             stay = $(this).find('.stay').val(); //1 2 3
+        //             pers = $(this).find('.pers').val(); // 2명 기준(1명 추가 20000원)
+        //             junior = $(this).find('.junior').val(); // 1명 추가 10000원
 
-                    total = (price * stay)  + (pers * persPrice) + (junior * juniorPrice);
-                    result += total;
+        //             total = (price * stay)  + (pers * persPrice) + (junior * juniorPrice);
+        //             result += total;
 
-                    $(this).find('.sec_06 p').text(priceStr(total) + '원');
+        //             $(this).find('.sec_06 p').text(priceStr(total) + '원');
 
-                }else{
-                    $(this).find('.sec_06 p').text(0 + ' 원');
-                }
+        //         }else{
+        //             $(this).find('.sec_06 p').text(0 + ' 원');
+        //         }
                 
-            });
+        //     });
 
-            $('.main_03 div p').text('총 결제금액 :' + priceStr(result) + '원');
-        }
+        //     $('.main_03 div p').text('총 결제금액 :' + priceStr(result) + '원');
+        // }
 
-        function priceStr(el){
-            return el.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-        }
+        // function priceStr(el){
+        //     return el.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        // }
 
-        //
-        // $('#chkMaintainAll, .chkMaintain').click(function(){ // 1번 알고리즘 실행
+        // //예약 완료 안내창
+        // $('.main_03 div a').on('click', function(e){
+        //     e.preventDefault();
 
-        // var sum = 0; // 합계 초기화 변수 -> 반복문 밖에서 선언해준다.
-
-        // $('.chkMaintain').each(function(){ // 2번 알고리즘 실행
-        //     if ($(this).is(":checked") == true) 
-        //     {
-        // // html 에서 선언해준 input type='hidden' 의 value값을 가져온다.
-        //         var price_goods = 
-        // parseInt($(this).parents('tr').find('input[name=price_goods]').val());
-        //         sum = sum + price_goods;
+        //     if( $('.sec_06 label').hasClass('active')){
+        //         alert('예약 하시겠습니까?');
+        //     }else{
+        //         alert('객실을 선택해 주세요.')
         //     }
         // });
-
-        // console.log(sum);
-
-        // });
-        //
-
-
-        //예약 완료 안내창
-        $('.main_03 div a').on('click', function(e){
-            e.preventDefault();
-
-            if( $('.sec_06 label').hasClass('active')){
-                alert('예약 하시겠습니까?');
-            }else{
-                alert('객실을 선택해 주세요.')
-            }
-        });
         
     </script>
 
