@@ -197,7 +197,7 @@
 
     .spot .inner_c .txt{
         position: absolute;
-        left:50%; top:20%;
+        left:50%; top:40%;
         transform:translate(-50%, -20%);
         text-align: center;
     }
